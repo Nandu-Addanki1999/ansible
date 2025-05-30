@@ -1,4 +1,4 @@
-- name: Variables from files
+- name: variables from files
   hosts: local
   Connection: local
   vars-files:
@@ -6,4 +6,4 @@
   tasks:
   - name: print course information
     ansible.builtin.debug:
-      msg: "Hello I am learning {{ COURSE }}, Duration{{ DURATION }}, Trainer is: {{ TRAINER }}"
+      msg: "Hello I am learning {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
