@@ -5,17 +5,18 @@
     GREETING: "Hello from play"
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: GREETING
-    prompt: Please enter the GREETING
-    private: false
+  # vars_prompt:
+  # - name: GREETING
+  #   prompt: Please enter the GREETING
+  #   private: false
   tasks:
   - name: print the GREETING
-    vars:
-      GREETING: "Hello from TASK"
+    # vars:
+    #   GREETING: "Hello from TASK"
     ansible.builtin.debug: 
       msg: "{{ GREETING }}"
 
 # 1. command line or args
 # 2. Task
 # 3. File
+# 4. Prompt
