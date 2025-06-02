@@ -4,3 +4,7 @@
     - name: redirect is output to a file
       #ansible.builtin.command: "ls -ltr > /tmp/output.txt"
       ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
+
+    - name: print the outcome
+      ansible.builtin.debug:
+        msg: "{{ command_result }}"
