@@ -4,6 +4,7 @@
   serial: 5
   tasks:
   - name: install nginx
+    host: local
     ansible.builtin.dnf:
       name: nginx
       state: installed
@@ -12,4 +13,4 @@
     ansible.builtin.service:
       name: nginx
       state: started
-      enabled: yes
+      enabled: yes 
