@@ -1,5 +1,5 @@
 - name: ping the server
-  hosts: keys
+  hosts: 172.31.28.38
   tasks:
   - name: install nginx
     ansible.builtin.dnf:
