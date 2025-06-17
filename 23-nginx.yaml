@@ -4,7 +4,6 @@
   serial: 5
   tasks:
   - name: install nginx
-    hosts: local
     ansible.builtin.dnf:
       name: nginx
       state: installed
