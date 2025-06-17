@@ -1,6 +1,7 @@
 - name: create ec2 and r53 records 
   hosts: localhost
   connection: local
+  gather_facts: false
   vars: 
     instance: 
     - mysql
